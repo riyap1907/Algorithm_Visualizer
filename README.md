@@ -1,4 +1,4 @@
-# 🌈 Sorting Visualizer
+#📊 Sorting Visualizer
 
 - This is a visualization tool for sorting algorithms made using React JS. 
 - I build this project because I fascinated by the sorting algorithms and wanted to visualize them in action.
