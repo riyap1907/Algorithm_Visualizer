@@ -1,0 +1,25 @@
+.listBlocks {
+  background-color: whitesmoke;
+  margin: 0 auto;
+  min-height: 520px;
+  min-width: 90%;
+  text-align: center;
+-ms-transform: rotate(180deg); /* IE 9 */
+  transform: rotate(180deg);
+}
+
+.listBlocks > .block {
+  background-color: turquoise;
+  color: #338a3e;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 2px;
+  text-align: center;
+  transition-duration: 10ms;
+  transition-property: height;
+  transition-timing-function: ease-in;
+-ms-transform: rotate(180deg); /* IE 9 */
+  transform: rotate(180deg);
+}

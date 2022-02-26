@@ -1,0 +1,130 @@
+nav {
+  align-items: center;
+  background-color: #ddd8d8;
+  box-shadow: 0px 2px 7px rgb(0, 195, 255);
+  display: flex;
+  justify-content: space-between;
+  min-height: 100px;
+  padding: 0 20px;
+}
+
+nav .nav-brand {
+  color: black;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+
+.toolbox {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbox label {
+  color: black;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: block;
+  text-align: center;
+}
+
+.toolbox > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbox button {
+  background-color: #f06292;
+  border-radius: 5px;
+  border: none;
+  color: #f1f1f1;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 20px;
+  outline: none;
+  padding: 13px 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.toolbox select,
+input[type='range'] {
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.toolbox input,
+select,
+button {
+  min-width: 130px;
+}
+
+.toolbox select {
+  background:#f06292;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5px 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media (max-width: 992px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .toolbox {
+    display: block;
+    text-align: center;
+  }
+
+  .toolbox > div {
+    margin: 10px 0;
+  }
+
+  .speed {
+    display: none;
+  }
+}
+
+.toolbox.group speed {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 17%;
+  height: 12px;
+  border-radius: 5px;
+  background: black;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #f06292;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #f06292;
+  cursor: pointer;
+}
